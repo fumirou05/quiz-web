@@ -1,0 +1,22 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["DOM", "es2022"],
+    "module": "ESNext",
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "outDir": "./dist/",
+    "baseUrl": ".",
+    "strict": false,
+  },
+  "include": [
+    "./src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
