@@ -3,6 +3,8 @@ name: GitHub Pages
 on:
   push:
     branches: ["master"]
+  pullrequest:
+    branches: ["master"]
   workflow_dispatch:
 
 concurrency:
