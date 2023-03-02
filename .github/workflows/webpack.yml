@@ -3,8 +3,6 @@ name: Deploy static content to Pages
 on:
   push:
     branches: ["master"]
-  pull_request:
-    branches: ["master"]
   # Github Actionsを手動で起動できるようにする。
   workflow_dispatch:
 
