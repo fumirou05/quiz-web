@@ -2,17 +2,19 @@ const { resolve } = require('path');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const outputFileName = "dist"
+
 module.exports = {
     entry: "./src/index.tsx",
 
     output: {
-        path: path.resolve(__dirname, "docs"),
+        path: path.resolve(__dirname, outputFileName),
         filename: "main.js"
     },
 
     devServer: {
         static: {
-            directory: path.resolve(__dirname, "docs")
+            directory: path.resolve(__dirname, outputFileName)
         },
         port: 8000,
         open: true,
